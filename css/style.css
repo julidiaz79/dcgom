@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.containerLayout{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    background-color:rgb(30, 13, 73);
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navBar .navbarBrand img{
+    width: 350px;
+    
+}
+
+.navBar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navBar ul .navItem{
+    padding: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navBar .navItem .navLink{
+    text-decoration: none;
+    list-style: none;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(246, 248, 140);
+
+}
+/*
+body{
+    background-image: url(../image/fondo6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+*/
+.grid-container{
+    display:grid;
+    width: 100%;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:"area1 area1 area2"
+                        "area1 area1 area3"
+                        "area4 area4 area5"
+                        "area4 area4 area6";
+    height: 1000px;
+    background-color: rgb(191, 241, 241);
+}
+    
+.grid1{
+    grid-area: area1;
+    text-align: center;    
+    font-size: 20px;
+    margin: 20px;
+    color: rgb(44, 44, 100);
+    background-color: rgb(148, 148, 248);
+}
+
+
+
+
+.grid2{
+    background-image:url(../image/frente2.jpg);
+    background-size: cover;
+    margin: 10px;
+    
+    
+}
+.grid3{
+    background-image:url(../image/frente1.jpg);
+    background-size: cover;
+    margin: 10px;
+    
+}
+
+.grid4{
+    grid-area: area4;
+    background-color: rgb(148, 148, 248);
+    margin: 20px;
+}
+.grid5{
+    background-image:url(../image/interior1.jpg);
+    background-size: cover;
+    margin: 10px;
+    
+}
+.grid6{
+    background-image:url(../image/interior2.jpg);
+    background-size: cover;
+    margin: 10px;
+}
